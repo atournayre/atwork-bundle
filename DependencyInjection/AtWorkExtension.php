@@ -2,6 +2,9 @@
 
 namespace Atournayre\Bundle\AtWorkBundle\DependencyInjection;
 
+use Atournayre\Bundle\AtWorkBundle\Contracts\DoctrineType;
+use Atournayre\Bundle\AtWorkBundle\Contracts\FixtureProvider;
+use Atournayre\Bundle\AtWorkBundle\DependencyInjection\CompilerPass\DoctrineTypePass;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -25,5 +28,9 @@ class AtWorkExtension extends Extension
 
         $loader = new PhpFileLoader($container, new FileLocator(\dirname(__DIR__).'/Resources/config'));
         $loader->load('services.php');
+
+        $container->registerForAutoconfiguration(FixtureProvider::class)
+            ->setPublic(true)
+            ->addTag('nelmio_alice.fixture_provider');
     }
 }
