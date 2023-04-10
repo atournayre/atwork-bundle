@@ -27,12 +27,22 @@
         "symfony/uid": "^6.2",
         "atournayre/assert": "^0",
         "atournayre/types": "^0",
-        "symfony/security-bundle": "^6.2"
+        "symfony/security-bundle": "^6.2",
+        "symfony/flex": "^2.2"
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "require": "6.2.*"
+            "allow-contrib": true,
+            "require": "6.2.*",
+            "endpoint": [
+                "https://api.github.com/repos/atournayre/symfony-flex-recipes/contents/index.json",
+                "flex://defaults"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
         }
     }
 }
