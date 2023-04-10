@@ -12,6 +12,25 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        return new TreeBuilder('atournayre_atwork');
+        $treeBuilder = new TreeBuilder('atournayre_atwork');
+        $rootNode = $treeBuilder->getRootNode();
+
+        $rootNode
+            ->children()
+                ->arrayNode('security')
+                    ->children()
+                        ->arrayNode('providers')
+                            ->children()
+                                ->arrayNode('entity')
+                                    ->prototype('class')->defaultValue('App\Entity\User')->end()
+                                ->end()
+                            ->end()
+                        ->end()
+                    ->end()
+                ->end()
+            ->end()
+            ;
+
+        return $treeBuilder;
     }
 }
