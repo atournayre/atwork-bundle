@@ -1,6 +1,6 @@
 <?php
 
-namespace Atournayre\Bundle\AtworkBundle\Trait\Misc;
+namespace Atournayre\Bundle\AtWorkBundle\Trait\Misc;
 
 trait PlainTextPasswordAccessorsTrait
 {

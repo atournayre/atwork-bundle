@@ -2,9 +2,7 @@
 
 namespace Atournayre\Bundle\AtWorkBundle\DependencyInjection;
 
-use Atournayre\Bundle\AtWorkBundle\Contracts\DoctrineType;
 use Atournayre\Bundle\AtWorkBundle\Contracts\FixtureProvider;
-use Atournayre\Bundle\AtWorkBundle\DependencyInjection\CompilerPass\DoctrineTypePass;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;

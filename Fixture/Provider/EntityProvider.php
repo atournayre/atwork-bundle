@@ -1,6 +1,6 @@
 <?php
 
-namespace Atournayre\Bundle\AtworkBundle\Fixture\Provider;
+namespace Atournayre\Bundle\AtWorkBundle\Fixture\Provider;
 
 use Atournayre\Bundle\AtWorkBundle\Contracts\FixtureProvider;
 use Doctrine\ORM\EntityManagerInterface;

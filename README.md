@@ -19,7 +19,7 @@ composer require atournayre/atwork-bundle
 
 return [
     // ...
-    new \Atournayre\Bundle\AtWorkBundle\AtworkBundle(),
+    new \Atournayre\Bundle\AtWorkBundle\AtWorkBundle(),
     // ...
 ]
 ```

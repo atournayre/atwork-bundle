@@ -1,6 +1,6 @@
 <?php
 
-namespace Atournayre\Bundle\AtworkBundle\Trait\Controller\ApiPlatform;
+namespace Atournayre\Bundle\AtWorkBundle\Trait\Controller\ApiPlatform;
 
 use ApiPlatform\Api\IriConverterInterface;
 use ApiPlatform\Api\UrlGeneratorInterface;
