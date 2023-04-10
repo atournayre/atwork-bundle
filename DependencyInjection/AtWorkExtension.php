@@ -31,6 +31,6 @@ class AtWorkExtension extends Extension
             ->setPublic(true)
             ->addTag('nelmio_alice.fixture_provider');
 
-        $container->setParameter('atournayre_atwork', $config);
+        $container->setParameter('atournayre_atwork.security.providers.entity.class', $config['security']['providers']['entity']['class']);
     }
 }
