@@ -23,7 +23,9 @@
         "symfony/security": "^2.0",
         "symfony/security-http": "^6.2",
         "symfony/security-core": "^6.2",
-        "api-platform/core": "^3.1"
+        "api-platform/core": "^3.1",
+        "doctrine/orm": "^2.14",
+        "symfony/uid": "^6.2"
     },
     "extra": {
         "symfony": {
