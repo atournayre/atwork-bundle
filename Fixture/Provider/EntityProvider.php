@@ -1,14 +1,14 @@
 <?php
 
-namespace App\DataFixtures\Provider;
+namespace Atournayre\Bundle\AtworkBundle\Fixture\Provider;
 
 use Atournayre\Bundle\AtWorkBundle\Contracts\FixtureProvider;
 use Doctrine\ORM\EntityManagerInterface;
 
-readonly class EntityProvider implements FixtureProvider
+class EntityProvider implements FixtureProvider
 {
     public function __construct(
-        private EntityManagerInterface $entityManager,
+        private readonly EntityManagerInterface $entityManager,
     ) {
     }
 

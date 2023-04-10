@@ -1,11 +1,11 @@
 <?php
 
-namespace App\DataFixtures\Provider;
+namespace Atournayre\Bundle\AtworkBundle\Fixture\Provider;
 
 use Atournayre\Bundle\AtWorkBundle\Contracts\FixtureProvider;
 use Symfony\Component\Uid\Uuid;
 
-readonly class TypeProvider implements FixtureProvider
+class TypeProvider implements FixtureProvider
 {
     public function uuid(?string $uuid = null): Uuid
     {
