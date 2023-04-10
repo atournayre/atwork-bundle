@@ -11,7 +11,7 @@ class HashPasswordProvider
 
     public function __construct(
         private readonly PasswordHasherService $passwordHasherService,
-        #[Autowire('atournayre_atwork.security.providers.entity.class')] string $userClass,
+        #[Autowire('%atournayre_atwork.security.providers.entity.class%')] string $userClass,
     )
     {
         $this->userClass = $userClass;
