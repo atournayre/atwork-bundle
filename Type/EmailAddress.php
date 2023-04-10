@@ -2,7 +2,7 @@
 
 namespace Atournayre\Bundle\AtWorkBundle\Type;
 
-use Webmozart\Assert\Assert;
+use Atournayre\Bundle\AtWorkBundle\Assertion\Assert;
 
 readonly class EmailAddress
 {
