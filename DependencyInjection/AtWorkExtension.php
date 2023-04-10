@@ -30,5 +30,7 @@ class AtWorkExtension extends Extension
         $container->registerForAutoconfiguration(FixtureProvider::class)
             ->setPublic(true)
             ->addTag('nelmio_alice.fixture_provider');
+
+        $container->setParameter('atournayre_atwork', $config);
     }
 }
