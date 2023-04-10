@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.1",
         "symfony/config": "6.2.*",
         "symfony/dependency-injection": "6.2.*",
         "symfony/http-kernel": "6.2.*",
@@ -27,7 +27,7 @@
         "doctrine/orm": "^2.14",
         "symfony/uid": "^6.2",
         "atournayre/assert": "^0",
-        "atournayre/collection": "^0"
+        "atournayre/types": "^0"
     },
     "extra": {
         "symfony": {

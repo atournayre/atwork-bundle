@@ -3,7 +3,7 @@
 namespace Atournayre\Bundle\AtWorkBundle\Doctrine\DBAL\Types;
 
 use Atournayre\Bundle\AtWorkBundle\Contracts\DoctrineType;
-use Atournayre\Bundle\AtWorkBundle\Type\EmailAddress;
+use Atournayre\Types\EmailAddress;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;
 
