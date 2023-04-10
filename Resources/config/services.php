@@ -10,7 +10,7 @@ use Atournayre\Bundle\AtWorkBundle\DependencyInjection\CompilerPass\DoctrineType
 return static function (ContainerConfigurator $container) {
     $services = $container->services()
         ->defaults()
-        ->instanceof(FixtureProvider::class)->tag('nelmio_alice.fixture_provider')
+        ->instanceof(FixtureProvider::class)->tag('nelmio_alice.faker.provider')
         // TODO Replace by recipe with all the types commented
         ->instanceof(DoctrineType::class)->tag(DoctrineTypePass::TAG);
 
