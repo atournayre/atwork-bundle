@@ -1,0 +1,29 @@
+{
+    "name": "atournayre/atwork-bundle",
+    "description": "This bundle is an overlay to the Symfony framework.",
+    "type": "symfony-bundle",
+    "license": [ "MIT" ],
+    "authors": [
+        {
+            "name": "atournayre",
+            "email": "aurelien.tournayre@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Atournayre\\Bundle\\AtWorkBundle\\": ""
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/config": "6.2.*",
+        "symfony/dependency-injection": "6.2.*",
+        "symfony/http-kernel": "6.2.*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "6.2.*"
+        }
+    }
+}
