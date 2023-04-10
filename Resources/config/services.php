@@ -39,5 +39,5 @@ return static function (ContainerConfigurator $container) {
 
     // Services
     $services
-        ->set(PasswordHasherService::class)->public();
+        ->set(PasswordHasherService::class)->autowire()->public();
 };
