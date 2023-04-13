@@ -2,20 +2,13 @@
 
 namespace Atournayre\Bundle\AtWorkBundle\Doctrine\DBAL\Types;
 
-use Atournayre\Bundle\AtWorkBundle\Contracts\DoctrineType;
 use Atournayre\Types\EmailAddress;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use Doctrine\DBAL\Types\Type;
 
-class EmailAddressType extends Type implements DoctrineType
+class EmailAddressType extends AbstractFixedLengthStringType
 {
     public const NAME = 'email_address';
     public const LENGTH = 255;
-
-    public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
-    {
-        return $platform->getStringTypeDeclarationSQL(['length' => self::LENGTH]);
-    }
 
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
@@ -48,8 +41,8 @@ class EmailAddressType extends Type implements DoctrineType
         return self::NAME;
     }
 
-    public function requiresSQLCommentHint(AbstractPlatform $platform): bool
+    protected function getLength(): int
     {
-        return true;
+        return self::LENGTH;
     }
 }
